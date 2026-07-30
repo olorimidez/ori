@@ -1,19 +1,37 @@
 import React from 'react'
 
 import Lobes from './LobesData'
+import Orishas from './Orishas'
+import About from './About'
+import Video from './Video'
 
 const HeroSection = () => {
-
   return (
-    <div className="">
-        <div className=' container flex flex-col items-center'>
-        <h5>Welcome Select your preffered Lobes</h5>
-        
-        <div>
-            <Lobes/>
+    <main className="w-full overflow-x-hidden">
+
+      {/* Lobes section */}
+      <section id="home" className="w-full scroll-mt-32">
+        <div className="container mx-auto flex flex-col items-center px-6">
+          <Lobes />
         </div>
-      </div>
-    </div>
+      </section>
+
+      {/* Orishas full width section */}
+      <section 
+        id="orisha" 
+        className="w-full" >
+        <Orishas />
+      </section>
+      <section id='about'>
+        <About/>
+      </section>
+      <section id='video'>
+        <Video/>
+      </section>
+
+
+    </main>
+    
   )
 }
 

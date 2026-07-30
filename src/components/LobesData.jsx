@@ -59,10 +59,12 @@ const Lobes = () => {
   return (
 
 
-  <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-gray-100 flex flex-col items-center justify-center px-6">
+  <div className='pt-24'>
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-gray-100 flex flex-col items-center justify-center px-6">
 
   {/* Header */}
   <div className="text-center mb-12">
+     <h5 className='pt-10 pb-3'>Welcome Select your preffered Lobes</h5>
     <h1 className="text-5xl font-bold text-gray-800 tracking-wide">
       Obi Divination
     </h1>
@@ -93,22 +95,22 @@ const Lobes = () => {
 
 
   {/* Abo Card */}
-  <div className="group w-40 overflow-hidden rounded-xl border border-gray-300 bg-white shadow-lg transition duration-300 hover:shadow-2xl">
-    <div className="overflow-hidden">
-      <Image
-        src={abo}
-        alt="obi_abo"
-        height={160}
-        width={160}
-        className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-90"
-      />
-    </div>
+    <div className="group w-40 overflow-hidden rounded-xl border border-gray-300 bg-white shadow-lg transition duration-300 hover:shadow-2xl">
+      <div className="overflow-hidden">
+        <Image
+          src={abo}
+          alt="obi_abo"
+          height={160}
+          width={160}
+          className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-90"
+        />
+      </div>
 
-    <div className="bg-gray-100 py-3 text-center">
-      <h3 className="font-semibold text-gray-800">Abo</h3>
+      <div className="bg-gray-100 py-3 text-center">
+        <h3 className="font-semibold text-gray-800">Abo</h3>
+      </div>
     </div>
   </div>
-</div>
   </div>
 
 
@@ -144,12 +146,10 @@ const Lobes = () => {
   </div>
 
 
-  {/* Footer Text */}
-  <p className="mt-10 text-sm text-gray-500">
-    Discover ancient knowledge through the Obi system
-  </p>
+ 
 
 </div>
+  </div>
   )
 }
 
