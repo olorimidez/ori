@@ -6,7 +6,7 @@ const videos = [
     title: " Egúngún",
     video: "/video/egungun.mp4",
     description:
-      "Prayers from the ancestors.",
+      "Prayers from the Ancestors.",
 
   },
   {
