@@ -7,6 +7,8 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import ako from '../assets/ako.jpeg'
 import abo from '../assets/abo.jpeg'
+import abata from "../assets/Obi-abata.jpg"
+
 
 
 
@@ -60,30 +62,53 @@ const Lobes = () => {
 
 
   <div className='pt-24'>
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-gray-100 flex flex-col items-center justify-center px-6">
+  <div className="min-h-screen mb-5 pb-5 s flex flex-col items-center justify-center px-6">
 
   {/* Header */}
-  <div className="text-center mb-12">
+ <div className="text-center mb-12 w-full flex flex-col items-center">
      <h5 className='pt-10 pb-3'>Welcome Select your preffered Lobes</h5>
     <h1 className="text-5xl font-bold text-gray-800 tracking-wide">
       Obi Divination
     </h1>
 
-    <p className="mt-4 text-gray-600 text-lg max-w-xl">
+    <p className="mt-4 text-gray-600 text-lg max-w-xl text-center">
       Explore the wisdom and meanings behind each Obi cast. 
       Select a configuration below to discover its interpretation.
     </p>
    
+<div className="w-full flex justify-center">
+  <div className="
+    grid 
+    grid-cols-1 
+    sm:grid-cols-3
+    gap-8 
+    justify-items-center
+  ">
+  {/* Obi Abata */}
+  <div className="group w-40 overflow-hidden rounded-xl border border-gray-300 bg-white shadow-lg transition duration-300 hover:shadow-2xl">
+    <div className="overflow-hidden">
+      <Image
+        src={abata}
+        alt="obi_abata"
+        width={120}
+        height={120}
+        className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-90"
+      />
+    </div>
 
-  <div className="flex justify-center gap-6">
-  {/* Ako Card */}
+    <div className="bg-gray-100 py-3 text-center">
+      <h3 className="font-semibold text-gray-800">Obi-Abata</h3>
+    </div>
+  </div>
+
+  {/* Ako */}
   <div className="group w-40 overflow-hidden rounded-xl border border-gray-300 bg-white shadow-lg transition duration-300 hover:shadow-2xl">
     <div className="overflow-hidden">
       <Image
         src={ako}
         alt="obi_ako"
-        height={160}
-        width={160}
+        width={120}
+        height={120}
         className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-90"
       />
     </div>
@@ -93,29 +118,41 @@ const Lobes = () => {
     </div>
   </div>
 
+  {/* Abo */}
+  <div className="group w-40 overflow-hidden rounded-xl border border-gray-300 bg-white shadow-lg transition duration-300 hover:shadow-2xl">
+    <div className="overflow-hidden">
+      <Image
+        src={abo}
+        alt="obi_abo"
+        width={120}
+        height={120}
+        className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-90"
+      />
+    </div>
 
-  {/* Abo Card */}
-    <div className="group w-40 overflow-hidden rounded-xl border border-gray-300 bg-white shadow-lg transition duration-300 hover:shadow-2xl">
-      <div className="overflow-hidden">
-        <Image
-          src={abo}
-          alt="obi_abo"
-          height={160}
-          width={160}
-          className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-90"
-        />
-      </div>
-
-      <div className="bg-gray-100 py-3 text-center">
-        <h3 className="font-semibold text-gray-800">Abo</h3>
-      </div>
+    <div className="bg-gray-100 py-3 text-center">
+      <h3 className="font-semibold text-gray-800">Abo</h3>
     </div>
   </div>
+</div>
+</div>
+
   </div>
 
 
   {/* Dropdown Menu Container */}
-  <div className="bg-white/80 backdrop-blur-md shadow-2xl rounded-3xl p-8 border border-gray-200">
+  <div className="
+    bg-white/80 
+    backdrop-blur-md 
+    shadow-2xl 
+    rounded-3xl 
+    p-8 
+    border 
+    border-gray-200
+    flex
+    justify-center
+    w-fit
+    ">
     
     <div className="flex flex-wrap justify-center gap-5">
 
@@ -125,7 +162,7 @@ const Lobes = () => {
           key={menu.title}
           id={`dropdown-button-drop-${index}`}
           drop="down"
-          variant="dark"
+          variant="success"
           title={menu.title}
           className="shadow-md w-full sm:w-auto"
         >

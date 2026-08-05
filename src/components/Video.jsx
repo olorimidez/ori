@@ -1,30 +1,60 @@
-import React from 'react'
+import React from "react";
+
+
+const videos = [
+  {
+    title: " Egúngún",
+    video: "/video/egungun.mp4",
+    description:
+      "Prayers from the ancestors.",
+
+  },
+  {
+    title: "Ẹgbẹ́",
+    video: "/video/egbe.mp4",
+    description:
+      "Drumming for earthly mate.",
+
+  }
+];
 
 const Video = () => {
   return (
-    <div>
-        {/* <div className="relative h-screen overflow-hidden">
-  <iframe
-    className="absolute top-1/2 left-1/2 w-[177.78vh] h-[56.25vw] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-    src="https://youtube.com/shorts/ZxAkkgHeHHc"
-    allow="autoplay"
-    allowFullScreen
-  />
+        <div>
+          <h3 className="flex justify-center mt-6 pb-5 text-3xl ">
+            Videos
+          </h3>
+           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+     
+ {videos.map((vid)=>(
+   <div key={vid.title}
+    className="bg-white rounded-2xl shadow-md overflow-hidden">
 
-  <div className="absolute inset-0 bg-black/50" />
+      <video
+        controls
+        className="w-full aspect-video"
+      >
+        <source src={vid.video} type="video/mp4"/>
+      </video>
 
-  <div className="relative z-10 flex h-full items-center justify-center">
-    <h1 className="text-white text-6xl font-bold">
-      Welcome to Ifá
-    </h1>
-  </div>
-</div> */}
+      <div className="p-5">
 
-                {/* <h1>
-                    video
-                </h1> */}
-    </div>
-  )
-}
+        <h2 className="text-xl font-semibold">
+          {vid.title}
+        </h2>
 
-export default Video
+        <p className="text-gray-600 mt-2">
+          {vid.description}
+        </p>
+       
+      </div>
+
+   </div>
+ ))}
+
+          </div>
+        </div>
+  );
+};
+
+export default Video;

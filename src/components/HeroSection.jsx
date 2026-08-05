@@ -4,6 +4,7 @@ import Lobes from './LobesData'
 import Orishas from './Orishas'
 import About from './About'
 import Video from './Video'
+import Picture from './Picture'
 
 const HeroSection = () => {
   return (
@@ -25,9 +26,13 @@ const HeroSection = () => {
       <section id='about'>
         <About/>
       </section>
+      <section id='picture'>
+        <Picture/>
+      </section>
       <section id='video'>
         <Video/>
       </section>
+  
 
 
     </main>

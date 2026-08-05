@@ -57,6 +57,8 @@ const About = () => {
               journey with Ifá but has not yet been fully initiated, as they
               have not yet received their personal
               <strong> Odù Ifá</strong>.
+              Lastly, Ìṣẹ̀fá can be performed in your absence without you 
+              being physically present.
             </p>
           </div>
 
@@ -68,7 +70,7 @@ const About = () => {
 
             <p className="text-stone-700 leading-8">
               Ìtẹ́fà is the sacred initiation into the mysteries of Ifá. It is a
-              much deeper ceremonial process than Ìdáfá and marks an
+              much deeper ceremonial process than Ìṣẹ̀fá and marks an
               individual's formal entry into the spiritual tradition of Ifá.
             </p>
 
@@ -77,6 +79,8 @@ const About = () => {
               relationship with Ọ̀rúnmìlà, the Òrìṣà of wisdom, destiny, and
               divine knowledge. Conducted by qualified Babaláwo, the ceremony
               may last several days depending on the lineage and tradition.
+              This process requires you to be physically present in order to 
+              be initiated, unlike Ìṣẹ̀fá.
             </p>
 
             <p className="text-stone-700 leading-8 mt-4">

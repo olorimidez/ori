@@ -88,6 +88,13 @@ const Navbar = () => {
               after:bg-red-900
                text-green-950
               after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >Orisha's</Link>
+            <Link href="#piture" className=" relative inline-block no-underline
+              after:content-['']
+              after:absolute after:left-0 after:-bottom-1
+              after:h-[3px] after:w-[60%]
+              after:bg-red-900
+               text-green-950
+              after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >Pictures</Link>
             <Link href="#video" className=" relative inline-block no-underline
               after:content-['']
               after:absolute after:left-0 after:-bottom-1
@@ -118,7 +125,7 @@ const Navbar = () => {
       >
 
         
-        {["Home", "About", "Popular", "Video",].map((item) => (
+        {["Home", "About", "Popular", "Picture", "Video"].map((item) => (
           <a
             key={item}
             href={item === "Home" ? "#home" : `#${item.toLowerCase()}`}
