@@ -6,6 +6,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
+          
           <h1 className="text-4xl md:text-5xl font-bold text-stone-900">
             Understanding the Stages of Ifá
           </h1>

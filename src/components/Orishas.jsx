@@ -45,6 +45,10 @@ const orisha = [
 const Orishas = () => {
   return (
     <div className=" p-8">
+      <h1 className="text-4xl md:text-5xl font-bold text-stone-900 flex justify-center">
+            Chants of some Orisha's
+          </h1>
+          <div className="w-24 h-1 bg-amber-600 mx-auto mt-3 mb-10 rounded-full"></div>
       <div className="flex flex-wrap gap-6 justify-center">
         {orisha.map((deity) => (
           <div

@@ -21,14 +21,15 @@ const videos = [
 const Video = () => {
   return (
         <div>
-          <h3 className="flex justify-center mt-6 pb-5 text-3xl ">
+          <h1 className="text-4xl md:text-5xl font-bold text-stone-900 flex justify-center">
             Videos
-          </h3>
+          </h1>
+          <div className="w-24 h-1 bg-amber-600 mx-auto mt-3 rounded-full"></div>
            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
      
  {videos.map((vid)=>(
    <div key={vid.title}
-    className="bg-white rounded-2xl shadow-md overflow-hidden">
+    className="bg-white mt-5 rounded-2xl shadow-md overflow-hidden">
 
       <video
         controls
