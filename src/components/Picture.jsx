@@ -5,6 +5,7 @@ import divi from "../assets/divination_tools.avif";
 import iroke_ifa from "../assets/iroke_ifa.jpg";
 import opele from "../assets/opele.jpg";
 import otutu_opon from "../assets/otutu_opon.jpeg";
+import iyereOsun from "../assets/iyere_osun.jpeg";
 
 
 const items = [
@@ -38,6 +39,11 @@ const items = [
     name: "Otutu Opon",
     image: otutu_opon,
   },
+  {
+    id: 7,
+    name: "Ìyèrè Òṣun",
+    image: iyereOsun,
+  },
 ];
 
 export default function Gallery() {
@@ -46,7 +52,7 @@ export default function Gallery() {
       <div className="mx-auto max-w-6xl px-6">
         <h1 className="text-4xl md:text-5xl font-bold text-stone-900 flex justify-center">
             Sacred Items
-          </h1>
+        </h1>
           <div className="w-24 h-1 bg-amber-600 mx-auto mt-3 mb-10 rounded-full"></div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
