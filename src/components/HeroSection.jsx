@@ -5,6 +5,7 @@ import Orishas from './Orishas'
 import About from './About'
 import Video from './Video'
 import Picture from './Picture'
+import Community from './Community'
 
 const HeroSection = () => {
   return (
@@ -31,6 +32,9 @@ const HeroSection = () => {
       </section>
       <section id='video'>
         <Video/>
+      </section>
+       <section id='community'>
+        <Community/>
       </section>
   
 

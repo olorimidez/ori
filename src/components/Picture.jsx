@@ -55,7 +55,7 @@ export default function Gallery() {
         </h1>
           <div className="w-24 h-1 bg-amber-600 mx-auto mt-3 mb-10 rounded-full"></div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {items.map((item) => (
             <div
               key={item.id}

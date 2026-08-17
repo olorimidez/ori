@@ -67,41 +67,48 @@ const Navbar = () => {
           </div>
 
           <div className="flex space-x-6 text-black">
-            <Link href="#home" className=" relative inline-block no-underline
+            <Link href="/" className=" relative inline-block no-underline
               after:content-['']
               after:absolute after:left-0 after:-bottom-1
               after:h-[3px] after:w-[60%]
               after:bg-red-900
               after:origin-left
               text-green-950">Home</Link>
-            <Link href="#about" className=" relative inline-block no-underline
+            <Link href="/#about" className=" relative inline-block no-underline
               after:content-['']
               after:absolute after:left-0 after:-bottom-1
               after:h-[3px] after:w-[60%]
                after:bg-red-900
                text-green-950
               after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >About</Link>
-            <Link href="#orisha" className=" relative inline-block no-underline
+            <Link href="/#orisha" className=" relative inline-block no-underline
               after:content-['']
               after:absolute after:left-0 after:-bottom-1
               after:h-[3px] after:w-[60%]
               after:bg-red-900
                text-green-950
               after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >Orisha's</Link>
-            <Link href="#piture" className=" relative inline-block no-underline
+            <Link href="/#piture" className=" relative inline-block no-underline
               after:content-['']
               after:absolute after:left-0 after:-bottom-1
               after:h-[3px] after:w-[60%]
               after:bg-red-900
                text-green-950
               after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >Pictures</Link>
-            <Link href="#video" className=" relative inline-block no-underline
+            <Link href="/#video" className=" relative inline-block no-underline
               after:content-['']
               after:absolute after:left-0 after:-bottom-1
               after:h-[3px] after:w-[60%]
               after:bg-red-900
                text-green-950
               after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >Videos</Link>
+            <Link href="/#community" className=" relative inline-block no-underline
+              after:content-['']
+              after:absolute after:left-0 after:-bottom-1
+              after:h-[3px] after:w-[60%]
+              after:bg-red-900
+               text-green-950
+              after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500" >Community</Link>
             
           </div>
         </div>
@@ -125,10 +132,10 @@ const Navbar = () => {
       >
 
         
-        {["Home", "About", "Popular", "Picture", "Video"].map((item) => (
+        {["Home", "About", "Popular", "Picture", "Video", "Community"].map((item) => (
           <a
             key={item}
-            href={item === "Home" ? "#home" : `#${item.toLowerCase()}`}
+            href={item === "Home" ? "/#home" : `/#${item.toLowerCase()}`}
             onClick={() => setIsOpen(false)}
             className={`
               relative inline-block no-underline
