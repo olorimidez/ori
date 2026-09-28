@@ -51,12 +51,12 @@ export default function LobeDetailsPage({ params }) {
 
   {/* Back to Homepage Button */}
   <div className="mt-8 text-center">
-    <Link
+ <Link
       href="/"
-      className="inline-block rounded-full bg-[#292722] px-7 py-3 text-sm font-medium text-white transition hover:bg-[#3a3832]"
+      className="inline-block rounded-full border border-[#292722] px-7 py-3 text-sm font-medium text-[#292722] transition hover:bg-[#292722] hover:text-white"
     >
-       Back to Homepage
-    </Link>
+      Back to Homepage
+</Link>
   </div>
 </div>
   );
