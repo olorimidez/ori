@@ -301,7 +301,7 @@ const handleLike = async (commentId) => {
 
 
         {/* QUESTION OF THE WEEK */}
-        <div className="mx-auto mt-20 max-w-2xl">
+        {/* <div className="mx-auto mt-20 max-w-2xl">
 
           <div className="rounded-3xl bg-[#292722] px-7 py-12 text-center text-white md:px-12">
 
@@ -322,7 +322,7 @@ const handleLike = async (commentId) => {
 
           </div>
 
-        </div>
+        </div> */}
 
       </div>
     </section>

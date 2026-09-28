@@ -1,6 +1,8 @@
 import React from 'react'
 import lobesDetails from '@/data/lobes'
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function LobeDetailsPage({ params }) {
   const { lobe, itemKey } = params;
@@ -16,7 +18,7 @@ export default function LobeDetailsPage({ params }) {
 
   return (
   
-  <div className="max-w-5xl mx-auto p-6">
+<div className="max-w-5xl mx-auto p-6">
   <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 md:flex">
     
     {/* Image Section */}
@@ -45,6 +47,16 @@ export default function LobeDetailsPage({ params }) {
       </p>
     </div>
 
+  </div>
+
+  {/* Back to Homepage Button */}
+  <div className="mt-8 text-center">
+    <Link
+      href="/"
+      className="inline-block rounded-full bg-[#292722] px-7 py-3 text-sm font-medium text-white transition hover:bg-[#3a3832]"
+    >
+       Back to Homepage
+    </Link>
   </div>
 </div>
   );

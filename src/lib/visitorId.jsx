@@ -1,9 +1,17 @@
+import { useEffect, useState } from "react";
+
 export function getVisitorId() {
+  const [visitorId, setVisitorId] = useState(null);
+
+  useEffect(() => {
+    const id = localStorage.getItem("visitorId");
+    setVisitorId(id);
+  }, []);
+
   if (typeof window === "undefined") {
     return null;
   }
 
-  let visitorId = localStorage.getItem("visitor_id");
 
   if (!visitorId) {
     visitorId = crypto.randomUUID();
@@ -12,3 +20,4 @@ export function getVisitorId() {
 
   return visitorId;
 }
+
