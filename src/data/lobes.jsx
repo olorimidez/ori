@@ -1,106 +1,121 @@
-import twoFaceUp from "../assets/2lobes.webp";
-import ogbe from "../assets/Obi-abata-all-face-up-(ogbe).jpg";
-import akita from "../assets/akita.jpeg"
-import obita from "../assets/obita.jpeg"
-import okanran from "../assets/okanran.jpeg"
-import obikan from "../assets/obikan.jpeg"
-import odiyeku from "../assets/odi-oyeku.jpeg"
-import obiako from "../assets/obi&ako.jpeg"
-import etaIwa from "../assets/EtaIwa.jpeg"
 
+import ogbe from "../assets/Obi-abata-all-face-up-(ogbe).jpg";
+import akita from "../assets/akita.jpeg";
+import obita from "../assets/obita.jpeg";
+import okanran from "../assets/okanran.jpeg";
+import obikan from "../assets/obikan.jpeg";
+import odiyeku from "../assets/odi-oyeku.jpeg";
+import obiako from "../assets/obi&ako.jpeg";
+import etaIwa from "../assets/EtaIwa.jpeg";
 
 const lobesDetails = {
-//   'two-lobes': {
-//     1: {
-//         // itemKey: 1,
-//         title: 'Two face up', 
-//         meaning: 'ALAFIA', 
-//         description: "You need to cast it again, but if it shows up again then its a YES.", 
-//         img: twoFaceUp
-//         },
+  "four-lobes": {
+    1: {
+      title: "Two face up (AKO MEJI) / Two face down (ABO MEJI)",
+      meaning: "OGBE",
+      description: {
+        type: "article",
+        paragraphs: [
+          "It's a YES. You don't need to cast again.",
+        ],
+      },
+      img: ogbe,
+    },
 
-//     2: { 
-//         // itemKey: 2,
-//         title: 'Two face down', 
-//         meaning: 'NO / ODI', 
-//         description: "You need to cast it again." 
-//        },
+    2: {
+      title:
+        "Two face up (AKO MEJI) / One face down (ABO) / One face up (ABO)",
+      meaning: "AKITA",
+      description: {
+        type: "article",
+        paragraphs: [
+          "Akita sends away the energy of death and sickness.",
+          "However, you need to cast again because the message is asking you to exercise patience before success.",
+        ],
+      },
+      img: akita,
+    },
 
-//     3: {
-//         // itemKey: 3,
-//         title: 'One face UP / one face DOWN', 
-//         meaning: 'YES', 
-//         description: "Its a YES" 
-//        }
-//   },
-
-  'four-lobes': {
-     1: {
-        // itemKey: 1,
-        title: 'Two face up (AKO MEJI) / Two face down (ABO MEJI)', 
-        meaning: 'OGBE', 
-        description: "Its a YES, you dont need to cast it again.",
-        img: ogbe,
-       },
-    2: { 
-        // itemKey: 2,
-        title: 'Two face up (AKO MEJI) / One face down (ABO) / One face up (ABO)', 
-        meaning: 'AKITA', 
-        description: "Akita(sends away the energy of death and sickness) but you need to cast it again because its talking about patience before success.",
-        img: akita,
-       },
     3: {
-        // itemKey: 3,
-        title: 'Two face up (ABO MEJI) / One face down (AKO) / One face up (AKO)', 
-        meaning: 'OBITA', 
-        description: "Its a weak response, firstly you need to take caution before taking important decisions, you need to cast again.",
-        img: obita,
-       },
-    4: {
-        // itemKey: 4,
-        title: 'All face down', 
-        meaning: 'OYEKU', 
-        description: "Your ancestors or ori is not in agreement with the request as at that time.",
-        img: odiyeku, 
-        },
-    5:  {
-        // itemKey: 5,
-        title: 'two face up (AKO) / one face up (ABO) / one down (ABO)', 
-        meaning: 'ETA IWA', 
-        description: "'Iwa gun, Iwa ko' Alafia for you, you will conquer your enemies far & near. Also dont be doubtful, your blessings are near.",
-        img: etaIwa
-        },
-    6:  {
-        // itemKey: 6,
-        title: 'Two face down (ABO MEJI) / One face down (AKO) / One face up (AKO)', 
-        meaning: 'OKANRAN', 
-        description: "Your ancestors is telling you to stay calm, put your left hand on the floor and put it directly to your and repeat the process three times. ",
-        img: okanran,
-        },
-    7:  {
-        // itemKey: 7,
-        title: 'Two face down (AKO MEJI) / One face down (ABO) / One face up (ABO)', 
-        meaning: 'OBIKAN', 
-        description: "Its a No, you need to cast again depending on your question.",
-        img: obikan,
-        },
-    8:  {
-        // itemKey: 8,
-        title: 'One face down (AKO) / One face up (AKO) / One face down (ABO) / One face up (ABO)', 
-        meaning: 'OBI ati AKO', 
-        description: "Dont ask again, its a YES",
-        img: obiako,
-        }
-  },
+      title:
+        "Two face up (ABO MEJI) / One face down (AKO) / One face up (AKO)",
+      meaning: "OBITA",
+      description: {
+        type: "article",
+        paragraphs: [
+          "It's a weak response. Firstly, you need to take caution before making important decisions. You need to cast again.",
+          "If this shows again for the same question, then it means a YES. You don't need to cast again the third time.",
+        ],
+      },
+      img: obita,
+    },
 
-//   'five-lobes' : {
-//     1: {
-//         // itemKey: 1,
-//         title: 'Two face up (ABO MEJI) / One face down (AKO) One face up (AKO)', 
-//         meaning: 'later', 
-//         description: "later" 
-//     }
-//   }
+    4: {
+      title: "All face down",
+      meaning: "OYEKU",
+      description: {
+        type: "article",
+        paragraphs: [
+          "Your ancestors or Ori are not in agreement with the request at that time.",
+        ],
+      },
+      img: odiyeku,
+    },
+
+    5: {
+      title:
+        "Two face up (AKO) / One face up (ABO) / One down (ABO)",
+      meaning: "ETA IWA",
+      description: {
+        type: "article",
+        paragraphs: [
+          "'Iwa gun, Iwa ko.' Alafia for you. You will conquer your enemies, far and near.",
+          "Do not be doubtful. Your blessings are near.",
+        ],
+      },
+      img: etaIwa,
+    },
+
+    6: {
+      title:
+        "Two face down (ABO MEJI) / One face down (AKO) / One face up (AKO)",
+      meaning: "OKANRAN",
+      description: {
+        type: "article",
+        paragraphs: [
+          "Your ancestors are telling you to stay calm.",
+          "Put your left hand on the floor and put it directly to your Ori, then repeat the process three times.",
+        ],
+      },
+      img: okanran,
+    },
+
+    7: {
+      title:
+        "Two face down (AKO MEJI) / One face down (ABO) / One face up (ABO)",
+      meaning: "OBIKAN",
+      description: {
+        type: "article",
+        paragraphs: [
+          "It's a NO. You need to cast again depending on your question.",
+        ],
+      },
+      img: obikan,
+    },
+
+    8: {
+      title:
+        "One face down (AKO) / One face up (AKO) / One face down (ABO) / One face up (ABO)",
+      meaning: "OBI ati AKO",
+      description: {
+        type: "article",
+        paragraphs: [
+          "Don't ask again. It's a YES.",
+        ],
+      },
+      img: obiako,
+    },
+  },
 };
 
 export default lobesDetails;

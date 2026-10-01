@@ -18,7 +18,7 @@ export default function LobeDetailsPage({ params }) {
 
   return (
   
-<div className="max-w-5xl mx-auto p-6">
+<div className="max-w-5xl mx-auto my-24 p-6">
   <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 md:flex">
     
     {/* Image Section */}
@@ -42,9 +42,13 @@ export default function LobeDetailsPage({ params }) {
         {detail.meaning}
       </div>
 
-      <p className="mt-6 text-gray-600 leading-8 text-lg">
-        {detail.description}
-      </p>
+      <article className="mt-6 space-y-4 text-gray-600 leading-8 text-lg">
+        {detail.description.paragraphs.map((paragraph, index) => (
+          <p key={index}>
+            {paragraph}
+          </p>
+        ))}
+      </article>
     </div>
 
   </div>
@@ -53,7 +57,7 @@ export default function LobeDetailsPage({ params }) {
   <div className="mt-8 text-center">
  <Link
       href="/"
-      className="inline-block rounded-full border border-[#292722] px-7 py-3 text-sm font-medium text-[#292722] transition hover:bg-[#292722] hover:text-white"
+      className="inline-block rounded-full border no-underline border-[#292722] px-7 py-3 text-sm font-medium text-[#292722] transition hover:bg-[#292722] hover:text-white"
     >
       Back to Homepage
 </Link>

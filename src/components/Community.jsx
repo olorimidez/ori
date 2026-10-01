@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { createClient } from "@/lib/supabase/client";
-import { getVisitorId } from "@/lib/visitorId";
+import { useVisitorId } from "@/lib/visitorId";
 
 
 export default function Community() {
-
   const supabase = createClient();
+  const visitorId = useVisitorId();
 
   const [comments, setComments] = useState([]);
   const [name, setName] = useState("");
@@ -47,8 +47,9 @@ const handleSubmit = async (e) => {
 };
 
 useEffect(() => {
+  if (!visitorId) return;
+
   const fetchCommentsAndLikes = async () => {
-    const visitorId = getVisitorId();
 
     const { data: commentsData, error: commentsError } = await supabase
       .from("comments")
@@ -86,14 +87,11 @@ useEffect(() => {
   };
 
   fetchCommentsAndLikes();
-}, []);
+}, [visitorId]);
 
 const handleLike = async (commentId) => {
-  const visitorId = getVisitorId();
-
   if (!visitorId) return;
 
-  // Don't allow this visitor to like the same comment twice
   if (likedComments.includes(commentId)) {
     return;
   }
@@ -110,13 +108,11 @@ const handleLike = async (commentId) => {
     return;
   }
 
-  // Mark comment as liked
   setLikedComments((current) => [
     ...current,
     commentId,
   ]);
 
-  // Immediately increase the displayed like count
   setLikeCounts((current) => ({
     ...current,
     [commentId]: (current[commentId] || 0) + 1,
