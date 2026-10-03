@@ -1,5 +1,5 @@
 
-import ogbe from "../assets/Obi-abata-all-face-up-(ogbe).jpg";
+import ogbe from "../assets/Obi-abata-all-face-up-ogbe.jpg";
 import akita from "../assets/akita.jpeg";
 import obita from "../assets/obita.jpeg";
 import okanran from "../assets/okanran.jpeg";
